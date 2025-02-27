@@ -1,0 +1,13 @@
+line_display:
+  date:
+    position:
+      x_org: -26
+      y_org: 39
+      z_org: 5
+      col_intv: 6
+  time:
+    position:
+      x_org: -20
+      y_org: 20
+      z_org: 5
+      col_intv: 6
