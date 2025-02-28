@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    application
 }
 
 group = "club.code2create"
@@ -21,4 +22,8 @@ java {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("club.code2create.Main")
 }

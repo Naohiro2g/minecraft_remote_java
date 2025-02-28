@@ -4,6 +4,9 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import club.code2create.AxisFlat;
+import club.code2create.Hello;
+
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
