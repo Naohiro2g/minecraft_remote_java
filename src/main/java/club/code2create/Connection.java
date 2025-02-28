@@ -32,9 +32,9 @@ package club.code2create;
 
             public void send(String f, Object... data) throws IOException {
                 String s = f + "(" + Arrays.stream(data).map(Object::toString).collect(Collectors.joining(","));
-//                System.out.println("Before removing quotes: " + s); // 引用符除去前にプリント
+                // System.out.println("Before removing quotes: " + s); // 引用符除去前にプリント
                 s = removeQuotes(s) + ")\n";
-                System.out.print("Sending command: " + s); // 送信される文字列を標準出力に表示
+                // System.out.print("Sending command: " + s); // 送信される文字列を標準出力に表示
                 _send(s);
             }
 

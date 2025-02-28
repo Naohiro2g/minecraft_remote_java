@@ -4,9 +4,6 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import club.code2create.AxisFlat;
-import club.code2create.Hello;
-
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
@@ -14,7 +11,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Choose a sample to run (1: Hello, 2: AxisFlat, x: Exit): ");
-            String choice = scanner.next();
+            String choice = scanner.nextLine().trim();
 
             if (choice.equals("x")) {
                 break;
@@ -26,7 +23,7 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("Choose an AxisFlat operation (1: drawXYZAxis, 2: clearXYZAxis, 3: resetMinecraftWorld): ");
-                    String axisChoice = scanner.next(); // axisChoiceを宣言し、ユーザー入力を取得
+                    String axisChoice = scanner.nextLine().trim();
                     try {
                         switch (axisChoice) {
                             case "1":
